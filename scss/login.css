@@ -1,0 +1,233 @@
+
+.page-bg{
+    /*position:relative;*/
+    /*height:100%;*/
+    /*width:100%;*/
+}
+
+.page-bg .bg-img{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+    /*min-width:1220px;*/
+    /*min-height:460px;*/
+}
+
+.page-bg .bg-bottom{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:65px;
+    background-color:#0a68bf;
+}
+.page-bg .bg-bottom .bottom-box{
+    position: relative;
+    height:65px;
+}
+
+.page-bg .bg-bottom .bottom-box .ship {
+    position: absolute;
+    left: 20%;
+    bottom: 67%;
+    width:120px;
+    animation: ship-move 3s infinite;
+    -webkit-animation: ship-move 3s infinite;
+}
+@keyframes ship-move{
+    0% {transform:rotate(-1deg);left:20%;}
+    50%{transform:rotate(1deg);left:20.2%;}
+    100%{transform:rotate(-1deg);left:20%;}
+}
+@-webkit-keyframes ship-move{
+    0% {transform:rotate(-1deg);left:20%;}
+    50%{transform:rotate(1deg);left:20.2%;}
+    100%{transform:rotate(-1deg);left:20%;}
+}
+@-ms-keyframes ship-move{
+    0% {transform:rotate(-1deg);left:20%;}
+    50%{transform:rotate(1deg);left:20.2%;}
+    100%{transform:rotate(-1deg);left:20%;}
+}
+.page-bg .bg-bottom .bottom-box .ice{
+    display:block;
+    position: absolute;
+}
+.page-bg .bg-bottom .bottom-box .ice-01{
+    left: 9%;
+    bottom:11%;
+    width: 120px;
+    animation: ice-move 2s infinite;
+    -webkit-animation: ice-move 3s infinite;
+    -webkit-transition:all 1s ease-in;
+}
+.page-bg .bg-bottom .bottom-box .ice-02{
+    right:35%;
+    bottom:37%;
+    width:40px;
+    animation: ice-move2 2s infinite;
+    -webkit-animation: ice-move2 3s infinite;
+    -webkit-transition:all 1s ease-in;
+}
+.page-bg .bg-bottom .bottom-box .ice-03{
+    right:8%;
+    bottom:5%;
+    width: 120px;
+    animation: ice-move3 2s infinite;
+    -webkit-animation: ice-move3 3s infinite;
+    -webkit-transition:all 1s ease-in;
+}
+@keyframes ice-move{
+    0% {bottom:15%;transform:rotate(-1deg)}
+    50%{bottom:11%;transform:rotate(1deg)}
+    100%{bottom:15%;transform:rotate(-1deg)}
+}
+@keyframes ice-move2{
+    0% {bottom:35%;transform:rotate(-1deg)}
+    50%{bottom:37%;transform:rotate(1deg)}
+    100%{bottom:35%;transform:rotate(-1deg)}
+}
+@keyframes ice-move3{
+    0% {bottom:7%;transform:rotate(-1deg)}
+    50%{bottom:5%;transform:rotate(1deg)}
+    100%{bottom:7%;transform:rotate(-1deg)}
+}
+
+.login-table{
+  height:410px;
+  width:1220px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-205px;
+  margin-left:-610px;
+}
+.login-center{
+  position: relative;
+  width:1220px;
+  margin:0 auto;
+}
+.login-center .login-banner{
+    position:relative;
+  margin-left:100px;
+}
+.login-center .login-banner .plane{
+    position:absolute;
+    top:9%;
+    left:26%;
+    width:112px;
+    /*animation: plane-move 3s infinite;*/
+    /*-webkit-animation: plane-move 3s;*/
+}
+/*@keyframes plane-move{*/
+    /*0% {top:9%;}*/
+    /*50%{top:30%;left:35%;}*/
+    /*100%{top:9%;left:26%;}*/
+/*}*/
+
+.login-center .login-form{
+  position:absolute;
+  right:0;
+  top:15px;
+  background:rgba(78,191,252,.4);
+  border-radius:10px;
+  padding:20px;
+  width:404px;
+}
+.login-center .login-form .input-group{
+  position:relative;
+  height:50px;
+  width:100%;
+  margin-bottom:20px;
+  background-color:#fff;
+}
+.login-center .login-form .login-label{
+   position:absolute;
+   top:10px;
+   left:10px;
+   width:30px;
+   height:30px;
+   line-height:30px;
+   text-align:center;
+   color:#acb0b7;
+}
+.login-form .input-group input,
+.login-form .code-group .login-code{
+  height:50px;
+  padding:10px 10px 10px 50px;
+  width:100%;
+  background:none;
+  border:none;
+  font-size:12px;
+  color:#596270;
+}
+.login-form .code-group{
+  height:50px;
+  width:100%;
+  margin-bottom:20px;
+}
+.login-form .code-group .login-code{
+  padding:10px 10px 10px 20px;
+  width:140px !important;
+  background-color:#fff;
+  margin-right:10px;
+  float:left;
+}
+.login-form .code-group .code-img{
+  display:inline-block;
+  float:left;
+  width:140px;
+  height:50px;
+  line-height:50px;
+  border:none;
+  font-size:20px;
+  text-align:center;
+  white-space:2;
+  background-color:#b7e4fd;
+}
+.login-form .code-group .change-img{
+  display:inline-block;
+  float:left;
+  height:50px;
+  line-height:50px;
+  font-size:12px;
+  color:#fff;
+  padding-left:10px;
+}
+.login-form .code-group .change-img:hover{
+  text-decoration:underline;
+}
+.login-form .button-group{
+  margin-top:10px;
+}
+.login-form .button-group .login-btn{
+  width:100%;
+  display: block;
+  height:42px;
+  line-height:42px;
+  text-align:center;
+  color:#fff;
+  font-size:16px;
+  background-color:#0b67be;
+  border-radius:10px;
+}
+.login-form .forget-pwd{
+  text-align:right;
+  margin-top:10px;
+}
+.login-form .forget-pwd a{
+  color:#fff;
+}
+.errCode,.errInfo{
+  font-size:14px;
+  color:#ff5858;
+  margin: -10px 20px 10px;
+}
+.errInfo{
+  margin:10px;
+}
