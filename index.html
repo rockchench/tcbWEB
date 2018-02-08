@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="app">
 
 <head>
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="app/css/bootstrap.css">
+    <link rel="stylesheet" href="build/app.css">
 </head>
 
 <body>
     <div>
         <div>
-            <div ng-include="'app/views/common/menu.html'"></div>
+            <div ng-include="'app/views/layout.html'"></div>
             <div ng-cloak ui-view></div>
         </div>
     </div>
     <script src="assets/libs/angular.js"></script>
     <script src="assets/libs/angular-ui-router.js"></script>
-    <script src="app.js"></script>
+    <script src="build/app.js"></script>
+    <script src="build/templates.js"></script>
+    <!--<script src="app/app.js"></script>
     <script src="app/module/first/firstController.js"></script>
-    <script src="app/module/second/secondController.js"></script>
+    <script src="app/module/second/secondController.js"></script>-->
 </body>
 
 </html>
