@@ -1,3 +1,0 @@
-angular.module('app').run(['$templateCache', function($templateCache) {$templateCache.put('app/views/common/menu.html','<div class="menu">\n    <ul id="menuList">\n        <li>\n            <a class="" href="#/first">\n                <i>\u6807\u7B7E\u4E00</i>\n            </a>\n        </li>\n        <li>\n            <a class="" href="#/second">\n                <i>\u6807\u7B7E\u4E8C</i>\n            </a>\n        </li>\n    </ul>\n</div>\n');
-$templateCache.put('app/views/first/first.html','first');
-$templateCache.put('app/views/second/second.html','second');}]);
