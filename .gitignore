@@ -1,8 +1,12 @@
-**/.DS_Store
-nbproject
-manifest.mf
-build.xml
-
+# kdiff3 缓存文件
+*.orig
+# 不上传组件目录，直接使用npm和bower来安装
+node_modules/
+bower_components/
+build/
+# 不再上传build内容，统一使用本地打包.
+.DS_Store
+.idea
+*.ini
+debug.log
 .project
-.settings
-.idea/*

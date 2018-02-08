@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="app/css/bootstrap.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <div ng-include="'app/views/common/menu.html'"></div>
+            <div ng-cloak ui-view></div>
+        </div>
+    </div>
+    <script src="assets/libs/angular.js"></script>
+    <script src="assets/libs/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="app/module/first/firstController.js"></script>
+    <script src="app/module/second/secondController.js"></script>
+</body>
+
+</html>
